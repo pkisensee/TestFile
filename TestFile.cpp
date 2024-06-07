@@ -56,7 +56,7 @@ void TestFile()
   test( ft.creationTime == ftb.creationTime );
   test( ft.lastAccessTime != ftb.lastAccessTime );
 
-  char buffer[1024];
+  char buffer[ 1024 ] = {}
   test( f.Read( buffer, 1024 ) );
   for( int i = 0; i < 70; ++i )
     test( buffer[i] == '/' );
@@ -126,7 +126,7 @@ void TestFile()
   g.SetFile( dst );
   test( f.Open( FileFlags::Read | FileFlags::SharedRead | FileFlags::SequentialScan ) );
   test( g.Open( FileFlags::Read | FileFlags::RandomAccess ) );
-  char destBuffer[ 1024 ];
+  char destBuffer[ 1024 ] = {};
   size_t bytesReadSrc = 0;
   do
   {
