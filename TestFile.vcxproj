@@ -165,8 +165,8 @@
     <ProjectReference Include="..\File\File.vcxproj">
       <Project>{a2a617b6-2015-48e9-bf8b-76e18fdc0043}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\WinUtil\WinUtil.vcxproj">
-      <Project>{820f1354-81c0-4a5e-b974-15cdd074a2b6}</Project>
+    <ProjectReference Include="..\WinShim\WinShim.vcxproj">
+      <Project>{5fb36991-edc5-47cf-84b2-268312497167}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

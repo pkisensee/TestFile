@@ -56,7 +56,7 @@ void TestFile()
   test( ft.creationTime == ftb.creationTime );
   test( ft.lastAccessTime != ftb.lastAccessTime );
 
-  char buffer[ 1024 ] = {}
+  char buffer[ 1024 ] = {};
   test( f.Read( buffer, 1024 ) );
   for( int i = 0; i < 70; ++i )
     test( buffer[i] == '/' );
