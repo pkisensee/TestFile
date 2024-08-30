@@ -127,11 +127,11 @@ void TestFile()
   test( f.Open( FileFlags::Read | FileFlags::SharedRead | FileFlags::SequentialScan ) );
   test( g.Open( FileFlags::Read | FileFlags::RandomAccess ) );
   char destBuffer[ 1024 ] = {};
-  size_t bytesReadSrc = 0;
+  uint32_t bytesReadSrc = 0;
   do
   {
     bytesReadSrc = 0;
-    size_t bytesReadDst = 0;
+    uint32_t bytesReadDst = 0;
     f.Read( buffer, 1024, bytesReadSrc );
     g.Read( destBuffer, 1024, bytesReadDst );
     test( bytesReadSrc == bytesReadDst );
